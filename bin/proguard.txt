@@ -1,0 +1,21 @@
+# view res/layout/selfmenu_item.xml #generated:17
+-keep class com.android.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view land\res/layout-land/pilotsysmain.xml #generated:13
+# view res/layout/pilotsysmain.xml #generated:14
+-keep class xhf.project.ardshippilotsys.COPToolbarView { <init>(...); }
+
+# view res/layout/pilotsysmain.xml #generated:22
+# view res/layout/pilotsysmain.xml #generated:95
+-keep class xhf.project.ardshippilotsys.CTopDataBarView { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class xhf.project.ardshippilotsys.PilotSysMainActivity { <init>(...); }
+
+# view land\res/layout-land/pilotsysmain.xml #generated:7
+# view res/layout/pilotsysmain.xml #generated:8
+-keep class xhf.project.chartcore.ChartCoreView { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class xhf.project.sensorctl.DeviceListActivity { <init>(...); }
+

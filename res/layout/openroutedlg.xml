@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/openroutelistView1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/openroutebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/openroutelistView1"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="22dp"
+        android:text="打开"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/delroutebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/openroutebtn1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="54dp"
+        android:text="删除"
+        android:textSize="15sp" />
+
+</RelativeLayout>

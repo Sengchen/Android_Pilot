@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pilotageview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".PilotSysMainActivity"
+   >
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+    <!-- 引航页面 -->
+
+    <TextView
+        android:id="@+id/pilottageview_sx_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:text="首向"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_sx_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignBottom="@id/pilottageview_sx_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:text="345.6"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_hx_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_sx_label"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical|left"
+         android:paddingLeft="10dp"
+        android:text="航向"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_hx_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignTop="@id/pilottageview_hx_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical"
+        android:text="356.6"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_hs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_hx_label"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical|left"
+         android:paddingLeft="10dp"
+        android:text="航速"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_hs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignTop="@id/pilottageview_hs_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:text="12.78kn"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_ph_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_hs_label"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical|left"
+         android:paddingLeft="10dp"
+        android:text="偏航"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_ph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignTop="@id/pilottageview_ph_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical"
+        android:text="1000m"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_wd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_ph_label"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical|left"
+         android:paddingLeft="10dp"
+        android:text="纬度"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_wd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignTop="@id/pilottageview_wd_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:text="38.0000"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_jd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_wd_label"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical|left"
+         android:paddingLeft="10dp"
+        android:text="经度"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_jd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="75sp"
+        android:layout_alignTop="@id/pilottageview_jd_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btnfbk"
+        android:gravity="center_vertical"
+        android:text="121.0000"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_jzxfw_label"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pilottageview_jd_label"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:text="距离转向点"
+        android:textSize="20sp" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/pilottageview_jzxfw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="120sp"
+        android:layout_alignTop="@id/pilottageview_jzxfw_label"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:text="231213"
+        android:textSize="25sp" 
+        android:textColor="@color/white"/>
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

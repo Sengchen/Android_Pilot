@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/layerdspradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/basedspradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="基本" />
+
+        <RadioButton
+            android:id="@+id/stddspradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标准" />
+
+        <RadioButton
+            android:id="@+id/alldspradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/bkmodegroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layerdspradiogroup"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/daybkradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="白天" />
+
+        <RadioButton
+            android:id="@+id/duskbkradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黄昏" />
+
+        <RadioButton
+            android:id="@+id/nightbkradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜晚" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/orieanmodegroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bkmodegroup"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+
+        <RadioButton
+            android:id="@+id/northupradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="真北" />
+
+        <RadioButton
+            android:id="@+id/courseupradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航向" />
+
+        <RadioButton
+            android:id="@+id/navlineupradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航线" />
+    </RadioGroup>
+
+</RelativeLayout>

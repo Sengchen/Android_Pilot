@@ -1,0 +1,678 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:visibility="invisible"
+    android:focusable="true"  
+	android:focusableInTouchMode="true"
+     >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="设置"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="*">
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="航路选择"
+            android:textSize="18sp" />
+        
+		<TableRow>
+		    
+           <TextView
+               android:id="@+id/hangluText"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:gravity="left|center_vertical"
+               android:paddingLeft="5dp"
+               android:text="航路名称"
+               android:clickable="true"
+               android:textSize="18sp" />
+           <TextView
+               android:id="@+id/hangluSelect"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:gravity="center"
+               android:text="无"
+               android:clickable="true"
+               android:textSize="18sp" />
+
+           <ImageView
+               android:id="@+id/hangluImg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@drawable/nextimg"
+               />
+		</TableRow>
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="船舶参数"
+            android:textSize="18sp" />
+		
+        <TableRow
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="船名"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/chuanming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+        </TableRow>
+        
+  		<View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呼号"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/huhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="船长(米)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/chuanchang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="船宽(米)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/chuankuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距船艏(米)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/juchuanshou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距左舷"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/juzuoxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/shipconfigButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="船舶参数确定"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="海图设置"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海图显示"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/htxsradiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/jibenradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="基本" />
+
+                <RadioButton
+                    android:id="@+id/biaozhunradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标准" />
+
+                <RadioButton
+                    android:id="@+id/quanburadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部" />
+            </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海图背景"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp" />
+            <RadioGroup
+                android:id="@+id/htbjgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                
+           		<RadioButton
+		            android:id="@+id/dayradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:checked="true"
+		            android:text="白天" />
+		
+		        <RadioButton
+		            android:id="@+id/duskradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="黄昏" />
+		
+		        <RadioButton
+		            android:id="@+id/nightradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="夜晚" />
+		    </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海图方位"
+                android:textSize="18sp" />
+
+               <RadioGroup
+                   	android:id="@+id/htfwgroup"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal">
+		
+		        <RadioButton
+		            android:id="@+id/northradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:checked="true"
+		            android:text="真北" />
+		
+		        <RadioButton
+		            android:id="@+id/courseradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="航向" />
+		
+		        <RadioButton
+		            android:id="@+id/navlineradio"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="航线" />
+		    </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+		<TableRow>
+           <TextView
+               android:id="@+id/haituText"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:gravity="left|center_vertical"
+               android:paddingLeft="5dp"
+               android:text="海图选择"
+               android:clickable="true"
+               android:textSize="18sp" />
+           <TextView
+               android:id="@+id/haituSelect"
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:gravity="center"
+               android:text="自动"
+               android:textSize="18sp" />
+
+           <ImageView
+               android:id="@+id/haituImg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@drawable/nextimg"
+               />
+		</TableRow>
+     
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="通信设置"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙扫描"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+            <ToggleButton
+		        android:id="@+id/lanyaSwitch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:button="@drawable/toggle_btn"
+		        android:layout_gravity="right"
+		        android:text=""
+        		android:textOn=""
+        		android:textOff=""
+		        android:checked="false"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络开关"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+            <ToggleButton
+		        android:id="@+id/txkg"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:button="@drawable/toggle_btn"
+		        android:layout_gravity="right"
+		        android:text=""
+        		android:textOn=""
+        		android:textOff=""
+		        android:checked="true"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务IP"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fwip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务端口"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fwdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地端口"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/bddk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/txcsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="通信参数确定"
+                android:textSize="18sp" />
+        </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="报警设置"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="偏航(米)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/pianhangEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DCPA(米)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/dcpaEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TCPA(分)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tcpaEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890."
+                android:textSize="18sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/alarmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="报警参数确定"
+                android:textSize="18sp" />
+        </TableRow>  
+      
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@color/title"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="显示设置"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本船航迹"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+            
+            <ToggleButton
+		        android:id="@+id/shiptrackBut"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:button="@drawable/toggle_btn"
+		        android:layout_gravity="right"
+		        android:text=""
+        		android:textOn=""
+        		android:textOff=""
+		        android:checked="false"/>
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:background="#B7B7B7" />
+
+        <TableRow
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIS标签"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+           <ToggleButton
+		        android:id="@+id/aislabelBut"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:button="@drawable/toggle_btn"
+		        android:layout_gravity="right"
+		        android:text=""
+        		android:textOn=""
+        		android:textOff=""
+		        android:checked="false"/>
+        </TableRow>
+      
+        
+    </TableLayout>
+
+   </ScrollView>
+   
+</RelativeLayout>

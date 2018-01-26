@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chartselectLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="海图选择"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/chartselectBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back" />
+    
+	    <ListView
+	        android:id="@+id/chartSelectListView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true" 
+	        android:background="@color/white"
+	        android:layout_marginTop="30dp"
+        	android:layout_marginBottom="50dp" >
+	    </ListView>
+
+</RelativeLayout>

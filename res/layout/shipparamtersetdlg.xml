@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  
+       
+    <TextView
+        android:id="@+id/cbcsnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:text="船名" />
+
+    <EditText
+        android:id="@+id/cbcsnameeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcsnameLabel"
+        android:layout_alignBottom="@+id/cbcsnameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/cbcscallnoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbcsnameLabel"
+        android:layout_below="@+id/cbcsnameeditText1"
+        android:layout_marginTop="22dp"
+        android:text="呼号" />
+
+    <EditText
+        android:id="@+id/cbcscallnoeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcscallnoLabel"
+        android:layout_alignBottom="@+id/cbcscallnoLabel"
+        android:layout_alignLeft="@+id/cbcsnameeditText1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/cbcsshiplLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbcscallnoLabel"
+        android:layout_below="@+id/cbcscallnoeditText1"
+        android:layout_marginTop="24dp"
+        android:text="船长" />
+
+    <EditText
+        android:id="@+id/cbcsshipleditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcsshiplLabel"
+        android:layout_alignBottom="@+id/cbcsshiplLabel"
+        android:layout_alignLeft="@+id/cbcscallnoeditText1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/cbcsshipwLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbcsshiplLabel"
+        android:layout_below="@+id/cbcsshipleditText1"
+        android:layout_marginTop="27dp"
+        android:text="船宽" />
+
+    <EditText
+        android:id="@+id/cbcsshipweditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcsshipwLabel"
+        android:layout_alignBottom="@+id/cbcsshipwLabel"
+        android:layout_alignLeft="@+id/cbcsshipleditText1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/cbcstxhdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbcsshipwLabel"
+        android:layout_below="@+id/cbcsshipweditText1"
+        android:layout_marginTop="31dp"
+        android:text="距船艏" />
+
+    <EditText
+        android:id="@+id/cbcstxhdeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcstxhdLabel"
+        android:layout_alignBottom="@+id/cbcstxhdLabel"
+        android:layout_alignLeft="@+id/cbcsshipweditText1"
+        android:layout_alignRight="@+id/cbcsshipweditText1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/cbcstxltLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbcstxhdLabel"
+        android:layout_below="@id/cbcstxhdeditText1"
+        android:layout_marginTop="25dp"
+        android:text="距左舷" />
+
+    <EditText
+        android:id="@+id/cbcstxlteditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbcstxltLabel"
+        android:layout_alignBottom="@+id/cbcstxltLabel"
+        android:layout_alignLeft="@+id/cbcstxhdeditText1"
+        android:layout_alignRight="@+id/cbcstxhdeditText1"
+        android:ems="10" />
+
+   
+
+ 
+</RelativeLayout>

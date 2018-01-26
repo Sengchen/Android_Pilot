@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ArdShipPilotSys</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="titlechartselect">海图选择</string>
+    <string name="titlechartdisplay">海图显示</string>
+    <string name="bluetoothsettitle">蓝牙接口</string>
+    <string name="wifisocksettitle">网络接口</string>
+     <string name="shipparammsettitle">船舶参数</string>
+    <string name="titleownshipdatait">本船定位</string>
+    <string name="titleaislistdatait">AIS目标</string>
+    <string name="tlerouteeditmenuit">绘制航路</string>
+    <string name="tleroutetranmenuit">调用航路</string>
+    
+    <string name="not_connected">没有连接一个蓝牙设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙设备不可用. </string>
+    <string name="title_connecting">连接...</string>
+    <string name="title_connected_to">连接: </string>
+    <string name="title_not_connected">无连接</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">正扫描蓝牙设备...</string>
+    <string name="select_device">选择一个蓝牙设备</string>
+    <string name="none_paired">没有蓝牙设备被配对</string>
+    <string name="none_found">没有蓝牙找到设备</string>
+    <string name="title_paired_devices">配对蓝牙设备</string>
+    <string name="title_other_devices">其它可用蓝牙设备</string>
+    <string name="button_scan">扫描蓝牙设备</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    
+</resources>

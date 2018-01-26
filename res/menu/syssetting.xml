@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--  
+    <item
+		android:id="@+id/shipparammset"
+        android:title="@string/shipparammsettitle">
+	</item>
+    <item
+		android:id="@+id/bluetoothset"
+        android:title="@string/bluetoothsettitle">
+	</item>
+	<item
+		android:id="@+id/wifisockset"
+        android:title="@string/wifisocksettitle">
+	</item> 
+-->
+</menu>

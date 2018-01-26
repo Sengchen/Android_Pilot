@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aislistLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible" >
+
+    <!--  -->
+
+    <View
+        android:id="@+id/aisdlg_toolsbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/tbrbk"
+        android:visibility="gone" />
+
+    <!--
+         <SearchView
+        android:id="@+id/aisdlg_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/aisdlg_toolsbar"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapWords"
+        android:iconifiedByDefault="true"
+        android:queryHint="输入船名" />
+    -->
+
+
+ <Button
+        android:id="@+id/aisdlg_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="  &lt; AIS"
+        android:textSize="16sp"
+        android:gravity="left|center_vertical"
+        android:textColor="#8EBE2C"
+        android:background="@color/tbrbk"
+        android:visibility="invisible" />
+    <!-- <ImageButton
+        android:id="@+id/aisdlg_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/backimg"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible" />
+     -->
+    <!-- <TextView
+        android:id="@+id/aisdlg_AIS_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aisdlg_toolsbar"
+        android:layout_alignTop="@id/aisdlg_toolsbar"
+        android:layout_toRightOf="@id/aisdlg_imgbtn"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:text="AIS"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:visibility="invisible" /> -->
+    
+    <TextView
+        android:id="@+id/aisdlg_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aisdlg_toolsbar"
+        android:layout_alignTop="@id/aisdlg_toolsbar"
+        android:background="@color/tbrbk"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+    
+    <!--
+    
+         <ImageButton
+        android:id="@+id/aisdlg_imgbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aisdlg_searchView"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/backbtn" />
+        
+         
+         <Switch
+        android:id="@+id/aisdlg_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aisdlg_imgbtn"
+        android:layout_alignTop="@id/aisdlg_imgbtn"
+     	android:layout_toLeftOf="@+id/aisdlg_swyhc_Button"
+        android:background="@color/tbrbk"
+        android:checked="true"
+        android:textOff="居中"
+        android:textOn="居中" />
+    -->
+
+ <TextView
+        android:id="@+id/aisdlg_jvxs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aisdlg_toolsbar"
+        android:layout_alignTop="@id/aisdlg_toolsbar"
+        android:layout_toLeftOf="@+id/aisdlg_jvxs_togbtn"
+        android:background="@color/tbrbk"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        android:text="居中"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+ 
+    <ToggleButton
+        android:id="@+id/aisdlg_jvxs_togbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_btn"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" 
+        android:visibility="invisible"/>
+
+   <!--  <Button
+        android:id="@+id/aisdlg_swyhc_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aisdlg_imgbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/aisdlg_imgbtn"
+        android:layout_marginRight="10dp"
+        android:text="设为引航船"
+        android:textSize="14sp" /> -->
+
+    <ListView
+        android:id="@+id/aistargetlistView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/aisdlg_toolsbar"
+        android:divider="@color/btnfbk"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   		 <requestFocus />
+
+    <EditText
+        android:id="@+id/routenameedit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="28dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/routeuseeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/routeuselabel"
+        android:layout_alignBottom="@+id/routeuselabel"
+        android:layout_alignLeft="@+id/routenameedit1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/routenamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/routenameedit1"
+        android:layout_alignBottom="@+id/routenameedit1"
+        android:layout_alignLeft="@+id/routesaylabel"
+        android:text="名称" />
+
+    <TextView
+        android:id="@+id/routeuselabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/routesaylabel"
+        android:layout_below="@+id/routenameedit1"
+        android:layout_marginTop="18dp"
+        android:text="用途" />
+
+    <TextView
+        android:id="@+id/routesaylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routeuseeditText"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="31dp"
+        android:layout_toLeftOf="@+id/routesayeditText"
+        android:text="说明" />
+
+    <EditText
+        android:id="@+id/routesayeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/routeuseeditText"
+        android:layout_alignTop="@+id/routesaylabel"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    
+</RelativeLayout>

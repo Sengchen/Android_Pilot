@@ -1,0 +1,452 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".PilotSysMainActivity" >
+
+    <xhf.project.chartcore.ChartCoreView
+        android:id="@+id/chartview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false" />
+
+      <xhf.project.ardshippilotsys.COPToolbarView
+          android:id="@+id/toolbarview"
+          android:layout_width="768dp"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true" />
+      
+       <View
+           android:id="@+id/topbarview1"
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="@color/tbrbk" />
+
+       <TextView
+           android:id="@+id/tbrcoursetxView1"
+           android:layout_width="65dp"
+           android:layout_height="34dp"
+           android:layout_alignTop="@+id/topbarview1"
+           android:layout_marginLeft="2dp"
+           android:layout_marginTop="6dp"
+           android:text="XXX.X°"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="normal|bold" />
+         
+           <TextView
+          android:id="@+id/tbrspeedtxView1"
+          android:layout_width="80dp"
+          android:layout_height="34dp"
+          android:layout_alignTop="@+id/topbarview1"
+          android:layout_marginLeft="72dp"
+           android:layout_marginTop="6dp"
+          android:text="XXX.Xkn" 
+          android:textColor="@color/white"
+           android:textSize="18sp"
+           android:textStyle="normal|bold" />
+        
+       <TextView
+          android:id="@+id/tbrxtetxView1"
+          android:layout_width="84dp"
+          android:layout_height="34dp"
+          android:layout_alignTop="@+id/topbarview1"
+          android:layout_marginLeft="156dp"
+           android:layout_marginTop="6dp"
+          android:text="XXXXm"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="normal|bold" />
+       <!--   
+         <TextView
+          android:id="@+id/tbrtimeView1"
+          android:layout_width="76dp"
+          android:layout_height="32dp"
+            android:layout_alignRight="@+id/topbarview1"
+          android:layout_alignTop="@+id/topbarview1"
+          android:layout_marginRight="52dp"
+           android:layout_marginTop="8dp"
+          android:text="HH:MM:SS"
+          android:textSize="15sp"
+          android:textColor="@color/white"
+          android:textStyle="normal|bold" />
+          
+       <TextView
+           android:id="@+id/tbrconnView1"
+           android:layout_width="50dp"
+           android:layout_height="30dp"
+           android:layout_alignRight="@+id/topbarview1"
+           android:layout_alignTop="@+id/topbarview1"
+           android:layout_marginTop="8dp"
+            android:textSize="15sp"
+          android:textColor="@color/white"
+          android:textStyle="normal|bold"
+           android:text="未联机 " />
+       -->
+       
+         <View
+        android:id="@+id/tbrconnView1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/topbarview1"
+        android:layout_alignTop="@+id/topbarview1"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/offonline"
+         />
+         
+    <View
+        android:id="@+id/pilotdataview"
+        android:layout_width="213dp"
+        android:layout_height="241dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/potdlgback"
+        android:visibility="invisible" />
+    
+      <Button
+          android:id="@+id/imgChartOpBtn"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_alignBottom="@id/toolbarview"
+          android:text="海图"
+          android:textSize="15sp" />
+      <Button
+          android:id="@+id/pilotageyh"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/delroutebtn"
+          android:layout_alignParentBottom="true"
+          android:text="引航"
+          android:textColor="@android:color/black"
+          android:textSize="15sp" />
+<!--  
+    <Button
+        android:id="@+id/imgCeliangOpBtn"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toolbarview"
+        android:layout_marginLeft="60dp"
+        android:text="测量"  
+        android:textSize="15sp" />
+    -->
+      <Button
+          android:id="@+id/imgAisBnt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@id/toolbarview"
+          android:layout_marginLeft="120dp"
+          android:text="数据"
+          android:textSize="15sp" />
+      
+      <Button
+          android:id="@+id/imgRouteBtn"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toolbarview"
+        android:layout_marginLeft="180dp"
+        android:text="航路"  
+        android:textSize="15sp" />
+       
+      
+      <Button
+          android:id="@+id/imgSyssetBtn"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toolbarview"
+        android:layout_marginLeft="240dp"
+        android:text="设置"
+        android:textSize="15sp" />
+      <!-- 
+      <Button
+          android:id="@+id/imgExitSysBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/toolbarview"
+        android:layout_marginLeft="300dp"
+        android:text="退出"
+        android:textSize="15sp" />
+ -->
+      <!--  
+        <Button
+          android:id="@+id/imgShipCOpBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/toolbarview"
+          android:layout_alignParentRight="true"
+           android:layout_marginBottom="20dp"
+          android:text="船中"
+          android:textSize="15sp" />
+        
+      <Button
+          android:id="@+id/imgZoomoutOpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_above="@+id/toolbarview"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="65dp"
+          android:text="缩小"
+          android:textSize="15sp" />
+
+      <Button
+          android:id="@+id/imgZoominOpBtn"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_above="@+id/toolbarview"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="110dp"
+          android:text="放大"
+          android:textSize="15sp" />
+      -->
+      
+      <ImageView
+          android:id="@+id/imgShipCOpBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/imgZoomoutOpBtn"
+          android:layout_toRightOf="@+id/measurehidid"
+          android:background="@drawable/amidship" />
+
+      <ImageView
+          android:id="@+id/imgCeliangOpBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/imgShipCOpBtn"
+          android:layout_alignTop="@+id/imgZoominOpBtn"
+          android:src="@drawable/measure" />
+
+      <ImageView
+          android:id="@+id/imgZoomoutOpBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/conntextView"
+          android:layout_alignTop="@+id/imgShipCOpBtn"
+          android:src="@drawable/narrow" />
+
+      <ImageView
+          android:id="@+id/imgZoominOpBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/imgZoomoutOpBtn"
+          android:layout_alignLeft="@+id/imgZoomoutOpBtn"
+          android:layout_marginBottom="26dp"
+          android:src="@drawable/enlarge" />
+      
+      
+    <TextView
+        android:id="@+id/logotextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topbarview1"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:text="XXXXXXX"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/posstatetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pilotdataview"
+        android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="110dp"
+        android:text="V"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/conntextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/posstatetextView"
+        android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="150dp"
+        android:text="未联机"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/shiptimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="34dp"
+        android:text="时间"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/shiplatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="纬度"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/shiplongLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="86dp"
+        android:text="经度"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/shiptimetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="34dp"
+        android:text="12::00::00" 
+        android:textSize="14sp"
+        android:visibility="invisible" />
+<!--  
+    <TextView
+        android:id="@+id/shiplattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	 android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:text="38.0000" 
+        android:textSize="14sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/shiplongtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	 android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="86dp"
+        android:text="121.0000" 
+        android:textSize="14sp"
+        android:visibility="invisible" />
+    -->
+      <TextView
+        android:id="@+id/shipcourseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="120dp"
+        android:text="航向"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/shipSpeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="150dp"
+        android:text="航速"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/shipHeadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="180dp"
+        android:text="首向"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/shipcoursetext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/pilotdataview"
+          android:layout_alignTop="@id/pilotdataview"
+          android:layout_marginLeft="64dp"
+          android:layout_marginTop="120dp"
+          android:text="356.6"
+          android:textSize="18sp"
+          android:textStyle="normal|bold"
+          android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/shipspeedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	 android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="150dp"
+        android:text="12.78kn" 
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:visibility="invisible"  />
+    
+    <TextView
+        android:id="@+id/shipheadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginLeft="156dp"
+           android:layout_marginTop="6dp"
+        android:text="345.6" 
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+         />
+    
+     <TextView
+        android:id="@+id/shipxteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="212dp"
+        android:text="偏航"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+     
+      <TextView
+        android:id="@+id/shipxtetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	 android:layout_alignLeft="@id/pilotdataview"
+        android:layout_alignTop="@id/pilotdataview"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="212dp"
+        android:text="1000m" 
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:visibility="invisible"  />
+
+    
+     
+</RelativeLayout>

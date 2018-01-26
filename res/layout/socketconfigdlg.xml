@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ 
+
+   <TextView
+       android:id="@+id/sockcfgsvriplabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="19dp"
+       android:layout_marginTop="15dp"
+       android:text="服务IP" />
+
+   <EditText
+       android:id="@+id/sockcfgsvripeditText1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/sockcfgsvriplabel"
+       android:layout_alignBottom="@+id/sockcfgsvriplabel"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="90dp"
+       android:ems="10" >
+
+       <requestFocus />
+   </EditText>
+
+   <TextView
+       android:id="@+id/sockcfgsvrportlabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/sockcfgsvriplabel"
+       android:layout_below="@+id/sockcfgsvripeditText1"
+       android:layout_marginTop="26dp"
+       android:text="服务端口" />
+
+   <EditText
+       android:id="@+id/sockcfgsvrporteditText1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/sockcfgsvrportlabel"
+       android:layout_alignBottom="@+id/sockcfgsvrportlabel"
+       android:layout_alignLeft="@+id/sockcfgsvripeditText1"
+       android:ems="10" />
+
+   <TextView
+       android:id="@+id/sockcfglocportlabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/sockcfgsvrportlabel"
+       android:layout_below="@+id/sockcfgsvrporteditText1"
+       android:layout_marginTop="32dp"
+       android:text="本地端口" />
+
+   <EditText
+       android:id="@+id/sockcfglocporteditText1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/sockcfglocportlabel"
+       android:layout_alignBottom="@+id/sockcfglocportlabel"
+       android:layout_alignLeft="@+id/sockcfgsvrporteditText1"
+       android:ems="10" />
+
+  
+
+   <CheckBox
+       android:id="@+id/sockcfgchk1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/sockcfglocportlabel"
+       android:layout_below="@+id/sockcfglocporteditText1"
+       android:layout_marginTop="15dp"
+       android:text="开/关" />
+
+  
+
+</RelativeLayout>
